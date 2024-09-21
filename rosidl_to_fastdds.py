@@ -28,6 +28,7 @@ def omgidl_to_fastdds(input_dir: Path, output_dir: Path):
         subprocess.run(
             [
                 "/rosidl-to-fastdds/Fast-DDS-Gen/scripts/fastddsgen",
+                "-replace",
                 "-typeros2",
                 "-I",
                 input_dir,
